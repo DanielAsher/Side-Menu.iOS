@@ -33,13 +33,13 @@ extension MenuViewController {
 
 extension MenuViewController: Menu {
     var menuItems: [UIView] {
-        return [tableView.tableHeaderView!] + tableView.visibleCells() as [UIView]
+        return [tableView.tableHeaderView!] + tableView.visibleCells as [UIView]
     }
 }
 
-extension MenuViewController: UITableViewDelegate {
+extension MenuViewController {
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
-        return indexPath == tableView.indexPathForSelectedRow() ? nil : indexPath
+        return indexPath == tableView.indexPathForSelectedRow ? nil : indexPath
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

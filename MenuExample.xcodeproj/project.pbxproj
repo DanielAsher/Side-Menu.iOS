@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5008F06C1A6D0B4E00D6B4EE /* SideMenu.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50B42F261A6A8E9800B05352 /* SideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5097E21E1A6A95CB002B4838 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B42F261A6A8E9800B05352 /* SideMenu.framework */; };
+		65C8B17D1BE0F760006F0232 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C8B17A1BE0F686006F0232 /* SideMenu.framework */; };
+		65C8B17E1BE0F760006F0232 /* SideMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65C8B17A1BE0F686006F0232 /* SideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D527A101E3BF9D807CC9609B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D527A8A79CD3995976B1E6E1 /* LaunchScreen.xib */; };
 		D527A20BFCB7C7B0E37A4763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D527A0056D698FE36A57118C /* Main.storyboard */; };
 		D527A433F1D6C1CBE9A8CCFE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527AA09B1BD9459C6ADB97B /* ContentViewController.swift */; };
@@ -31,9 +31,23 @@
 			remoteGlobalIDString = 50B42F001A6A879C00B05352;
 			remoteInfo = SideMenu;
 		};
-		50B42F271A6A8EA300B05352 /* PBXContainerItemProxy */ = {
+		65C8B1791BE0F686006F0232 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 50B42F211A6A8E9800B05352 /* SideMenu.xcodeproj */;
+			containerPortal = 65C8B1751BE0F686006F0232 /* SideMenu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50B42F001A6A879C00B05352;
+			remoteInfo = SideMenu;
+		};
+		65C8B17B1BE0F691006F0232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65C8B1751BE0F686006F0232 /* SideMenu.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 50B42EFF1A6A879C00B05352;
+			remoteInfo = SideMenu;
+		};
+		65C8B17F1BE0F760006F0232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65C8B1751BE0F686006F0232 /* SideMenu.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 50B42EFF1A6A879C00B05352;
 			remoteInfo = SideMenu;
@@ -41,14 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5008F06B1A6D0B4500D6B4EE /* CopyFiles */ = {
+		65C8B1811BE0F760006F0232 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5008F06C1A6D0B4E00D6B4EE /* SideMenu.framework in CopyFiles */,
+				65C8B17E1BE0F760006F0232 /* SideMenu.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -57,6 +72,7 @@
 		50B42F211A6A8E9800B05352 /* SideMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SideMenu.xcodeproj; path = ../../SideMenu/SideMenu.xcodeproj; sourceTree = "<group>"; };
 		50B9664E1A25E40E00208F2E /* MenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B966521A25E40E00208F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C8B1751BE0F686006F0232 /* SideMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SideMenu.xcodeproj; sourceTree = "<group>"; };
 		D527A0056D698FE36A57118C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D527A13E48B18500949B7B96 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealAnimator.swift; sourceTree = "<group>"; };
 		D527A23D29DEA855526855B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -76,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5097E21E1A6A95CB002B4838 /* SideMenu.framework in Frameworks */,
+				65C8B17D1BE0F760006F0232 /* SideMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +118,7 @@
 		50B966451A25E40E00208F2E = {
 			isa = PBXGroup;
 			children = (
+				65C8B1751BE0F686006F0232 /* SideMenu.xcodeproj */,
 				50B966501A25E40E00208F2E /* MenuExample */,
 				50B9664F1A25E40E00208F2E /* Products */,
 			);
@@ -135,6 +152,14 @@
 				50B966521A25E40E00208F2E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65C8B1761BE0F686006F0232 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65C8B17A1BE0F686006F0232 /* SideMenu.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D527A3BCD5D6369AB1ACD0C3 /* Misc */ = {
@@ -218,12 +243,13 @@
 				50B9664A1A25E40E00208F2E /* Sources */,
 				50B9664B1A25E40E00208F2E /* Frameworks */,
 				50B9664C1A25E40E00208F2E /* Resources */,
-				5008F06B1A6D0B4500D6B4EE /* CopyFiles */,
+				65C8B1811BE0F760006F0232 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50B42F281A6A8EA300B05352 /* PBXTargetDependency */,
+				65C8B17C1BE0F691006F0232 /* PBXTargetDependency */,
+				65C8B1801BE0F760006F0232 /* PBXTargetDependency */,
 			);
 			name = MenuExample;
 			productName = Menu;
@@ -236,7 +262,8 @@
 		50B966461A25E40E00208F2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Yalantis;
 				TargetAttributes = {
 					50B9664D1A25E40E00208F2E = {
@@ -248,6 +275,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 50B966451A25E40E00208F2E;
 			productRefGroup = 50B9664F1A25E40E00208F2E /* Products */;
 			projectDirPath = "";
@@ -255,6 +285,10 @@
 				{
 					ProductGroup = 50B42F221A6A8E9800B05352 /* Products */;
 					ProjectRef = 50B42F211A6A8E9800B05352 /* SideMenu.xcodeproj */;
+				},
+				{
+					ProductGroup = 65C8B1761BE0F686006F0232 /* Products */;
+					ProjectRef = 65C8B1751BE0F686006F0232 /* SideMenu.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -270,6 +304,13 @@
 			fileType = wrapper.framework;
 			path = SideMenu.framework;
 			remoteRef = 50B42F251A6A8E9800B05352 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65C8B17A1BE0F686006F0232 /* SideMenu.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SideMenu.framework;
+			remoteRef = 65C8B1791BE0F686006F0232 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -307,10 +348,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		50B42F281A6A8EA300B05352 /* PBXTargetDependency */ = {
+		65C8B17C1BE0F691006F0232 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
-			targetProxy = 50B42F271A6A8EA300B05352 /* PBXContainerItemProxy */;
+			targetProxy = 65C8B17B1BE0F691006F0232 /* PBXContainerItemProxy */;
+		};
+		65C8B1801BE0F760006F0232 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			targetProxy = 65C8B17F1BE0F760006F0232 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -335,6 +381,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -396,9 +443,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MenuExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yalantis.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MenuExample;
 			};
 			name = Debug;
@@ -407,9 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MenuExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yalantis.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MenuExample;
 			};
 			name = Release;
