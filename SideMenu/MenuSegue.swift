@@ -9,13 +9,13 @@ import ObjectiveC
 
 private var key = 0
 
-class MenuSegue: UIStoryboardSegue {
+public class MenuSegue: UIStoryboardSegue {
     override init(identifier: String!, source: UIViewController, destination: UIViewController) {
         assert(destination is Menu, "Destination must conform to \(NSStringFromProtocol(Menu)) protocol")
         super.init(identifier: identifier, source: source, destination: destination)
     }
 
-    override func perform() {
+    public override func perform() {
         let source = sourceViewController as UIViewController
         let target = destinationViewController as UIViewController
 
@@ -27,14 +27,14 @@ class MenuSegue: UIStoryboardSegue {
 }
 
 extension MenuSegue: UIViewControllerTransitioningDelegate {
-    func animationControllerForPresentedController(presented: UIViewController, presentingController _: UIViewController,
+    public func animationControllerForPresentedController(presented: UIViewController, presentingController _: UIViewController,
         sourceController _: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         objc_setAssociatedObject(presented, &key, self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         return MenuTransitionAnimator(.Presentation)
     }
 
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         dispatch_async(dispatch_get_main_queue()) {
             objc_setAssociatedObject(dismissed, &key, nil, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
