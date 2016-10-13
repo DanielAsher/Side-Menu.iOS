@@ -25,7 +25,7 @@ class MenuTransitionAnimator: NSObject {
         view.frame = CGRectMake(0, 0, menu.preferredContentSize.width, host.view.bounds.height)
         view.autoresizingMask = [.FlexibleRightMargin, .FlexibleHeight]
         view.translatesAutoresizingMaskIntoConstraints = true
-        context.containerView()!.addSubview(view)
+        context.containerView().addSubview(view)
 
         animateMenu(menu as! Menu, startAngle: angle, endAngle: 0) {
             context.completeTransition(true)
